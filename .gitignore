@@ -1,3 +1,5 @@
 /node_modules
-/package.json
-/yarn.lock
+yarn.lock
+/dev
+index.js
+package.json
