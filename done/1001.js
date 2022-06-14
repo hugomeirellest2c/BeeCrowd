@@ -1,5 +1,3 @@
-const { parse } = require('path');
-
 let input = '';
 try {
     input = require('fs').readFileSync('/dev/stdin', 'utf8');
