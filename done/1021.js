@@ -13,7 +13,7 @@ var lines = input.split('\n');
 
 //#endregion
 
-var valor = parseFloat(lines.shift()).toFixed(2);
+var valor = lines.shift();
 var N100 = 0;
 var N050 = 0; 
 var N020 = 0; 
@@ -54,25 +54,28 @@ while(valor >= 2){
 while(valor >= 1){
     valor = valor-1;
     M100 = M100+1;
-}
-while(valor >= 0.50){
-    valor = valor-0.50;
+} 
+
+valor = (valor*100).toFixed(0);
+
+while(valor >= 50){
+    valor = valor-50;
     M050 = M050+1;
 }
-while(valor >= 0.25){
-    valor = valor-0.25;
+while(valor >= 25){
+    valor = valor-25;
     M025 = M025+1;
 }
-while(valor >= 0.10){
-    valor = valor-0.10;
+while(valor >= 10){
+    valor = valor-10;
     M010 = M010+1;
 }
-while(valor >= 0.05){
-    valor = valor-0.05;
+while(valor >= 5){
+    valor = valor-5;
     M005 = M005+1;
 }
-while(valor >= 0.01){
-    valor = valor-0.01;
+while(valor >= 1){
+    valor = valor-1;
     M001 = M001+1;
 }
 
